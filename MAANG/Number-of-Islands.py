@@ -93,7 +93,7 @@ class Solution:
         # Check the four adjacent cells (up, down, left, and right) and perform a DFS traversal on each unvisited land cell.
         for dx, dy in [(1, 0), (-1, 0), (0, 1), (0, -1)]:
             new_i = i + dx
-            new_j = j + dy
+            new_j = j + d
 
             if 0 <= new_i < len(surface) and 0 <= new_j < len(surface[0]) and surface[new_i][new_j] == 1 and not visited[new_i][new_j]:
                 self.dfs(surface, visited, new_i, new_j)
