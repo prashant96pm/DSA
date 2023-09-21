@@ -96,6 +96,6 @@ class Solution:
             new_j = j + dy
 
             if 0 <= new_i < len(surface) and 0 <= new_j < len(surface[0]) and surface[new_i][new_j] == 1 and not visited[new_i][new_j]:
-                self.dfs(surface, visited, new_i, new_j)
+                self.dfs(surface, visited, new_i, new_j
 
 
